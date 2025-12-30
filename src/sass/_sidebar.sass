@@ -5,6 +5,13 @@
     padding-top: 3.7rem
     display: flex
     justify-content: center
+    @include respond(tab-land)
+        grid-column: 1 / -1
+        grid-row: 1 / 2
+        justify-content: end
+        align-items: center
+        padding-top: 0rem
+        padding-right: 3rem
 .hamburger
     border: none
     background: $color-gray-light

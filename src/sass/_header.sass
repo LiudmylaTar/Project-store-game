@@ -7,6 +7,12 @@
     background: linear-gradient(90deg, rgba(#000000, 0.7), rgba(#000000, 0.7)), url(./../img/header-1x.jpg) center / cover no-repeat
     @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
         background: linear-gradient(90deg, rgba(#000000, 0.7), rgba(#000000, 0.7)), url(./../img/header-2x.jpg) center / cover no-repeat
+    @include respond(tab-port)
+        grid-column: full-start / full-end
+    h1
+        @include respond(tab-port)
+            margin-bottom: 2rem
+
     &__btn
         align-self: start
         justify-self: start
